@@ -1,0 +1,114 @@
+---
+import Nav from "@components/Nav.astro"
+import Container from "@scaffolding/Container.astro";
+import SwitchTheme from "@scaffolding/SwitchTheme.astro"
+import Icon from "@ui/Icon.astro";
+import Button from "@ui/Button.astro";
+import IconWhatsapp from "./icon/IconWhatsapp.astro";
+import IconArrow from "./icon/IconArrow.astro";
+
+const headerId = "main-header";
+const logoId = "main-logo";
+---
+
+<header 
+    id={headerId}
+    class="pt-4 fixed w-full z-50 transition-all">
+    
+    <Container 
+        class="!px-4">
+        <div class="ftn-nav-container ">
+            <a 
+                id={logoId} 
+                href="#hero" 
+                class="transition-all w-[100px] sm:w-[230px] ">
+                <figure id="logo" class=" overflow-hidden">
+                    <Icon name="logotipoHorizontal" className="w-auto h-[70px]" />
+                </figure>
+            </a>
+            <Nav/>
+            <div class="w-[230px] text-right">
+                <Button 
+                    href="#contact" 
+                    type="inverted" 
+                    class="ftn-button group">
+                    Hablemos!
+                    <IconArrow class="w-0 h-5 ml-1 group-hover:w-5 transition-all ease-linear duration-200"/>
+                </Button>
+            </div>
+            <!-- <div>
+                <div class="relative w-8 h-8 ml-auto">
+                    <SwitchTheme/>
+                </div>
+            </div> -->
+        </div>
+        
+    </Container>
+</header>
+
+<style>
+    .ftn-nav-container{
+        @apply flex justify-between items-center ;
+        @apply mx-auto w-full bg-ftnBg;
+        @apply transition-all ease-in-out duration-700 ;
+    }
+    .ftn-header-scrolling .ftn-nav-container{
+        @apply bg-gray-950/80 backdrop-blur-sm shadow-lg;
+        @apply lg:w-[800px] py-4 px-2 h-16;
+        @apply overflow-hidden
+    }
+
+    .ftn-header-scrolling .ftn-nav-container .ftn-button{
+        @apply !p-0
+    }
+
+    nav{
+
+    }
+    
+</style>
+
+<script>
+    type NullableElement = HTMLElement | null;
+
+    const toggleHeaderStyles = (scrollPosition: number) => {
+        const header = document.getElementById('main-header') as NullableElement;
+        const logo = document.getElementById('logo') as NullableElement;
+        const logoSecondary = document.getElementById('secondary-logo') as NullableElement;
+
+        if (!header) return;
+        const scrollingClass = 'ftn-header-scrolling';
+
+        if (scrollPosition > 80) {
+            header.classList.add(scrollingClass);
+            logo?.classList.add('w-[6.5rem]');
+            // logoSecondary?.classList.remove('text-[0px]');
+        } else {
+        header.classList.remove(scrollingClass);
+        logo?.classList.remove('w-[6.5rem]');
+        // logoSecondary?.classList.add('text-[0px]');
+        }
+    };
+
+    // Función `throttle` para optimizar el evento `scroll`
+    const throttle = (func: (...args: any[]) => void, limit: number) => {
+    let lastCall = 0;
+    return (...args: any[]) => {
+        const now = Date.now();
+        if (now - lastCall >= limit) {
+            lastCall = now;
+            func(...args);
+        }
+    };
+    };
+
+    // Solo en el navegador
+    if (typeof window !== 'undefined') {
+    const onScroll = throttle(() => {
+        toggleHeaderStyles(window.scrollY);
+    }, 100);
+
+    window.addEventListener('scroll', onScroll);
+}
+
+</script>

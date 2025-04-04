@@ -1,0 +1,17 @@
+---
+interface LineProps {
+    variant?: "vertical" | "horizontal";
+}
+
+const {
+    variant = "horizontal",
+} = Astro.props as LineProps;
+
+const classes = [
+    variant === "horizontal"
+    ? "w-full h-0.5 bg-line-h-gradient"
+    : "w-1.5 h-full bg-line-v-gradient",
+].join (" ")
+---
+
+<div class={classes}></div>

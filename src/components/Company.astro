@@ -1,0 +1,35 @@
+---
+import Container from "@scaffolding/Container.astro";
+import Section from "@scaffolding/Section.astro";
+import Icon from "@ui/Icon.astro";
+import Button from "./ui/Button.astro";
+import Line from "@ui/Line.astro";
+import IconArrow from "./icon/IconArrow.astro";
+
+---
+
+<Section 
+    id="company">
+    <Container 
+        class="sm:flex gap-10 relative">
+        <div class=" w-full lg:p-10 relative">
+            <div class="w-52 h-56 bg-[var(--brand-gray-400)] absolute top-0 right-0 z-0"></div>
+            <div class="bg-marmol bg-cover h-80 w-full sm:w-96 z-10 relative"></div>
+        </div>
+        <Line variant="vertical"/>
+        <div class="max-w-3xl pt-10 sm:p-10">
+            <h2 class="uppercase text-2xl mb-4 tracking-widest font-semibold pb-3 border-b-2 border-[var(--brand-gray-900)]">
+                Bienvenidos a Designer Wood Cabinets 
+            </h2>
+            <p class="mb-6">
+                Somos un equipo apasionado por lograr espacios funcionales y llenos de vida. Desde nuestras primeras remodelaciones hasta los proyectos más desafiantes de hoy, hemos aprendido que lo más importante es entender las necesidades de nuestros clientes y convertir sus ideas en realidad.
+            </p>
+            <Button 
+                href="#contact" 
+                class="group">
+                Solicita tu cotización hoy
+                <IconArrow class="w-0 h-5 ml-1 group-hover:w-5 transition-all ease-linear duration-200"/>
+            </Button>
+        </div>
+    </Container>
+</Section>

@@ -1,0 +1,42 @@
+---
+import Container from "@scaffolding/Container.astro";
+import Section from "@scaffolding/Section.astro";
+import Portfolio from "@ui/Portfolio.astro";
+import Title from "@ui/Title.astro";
+import IconArrow from "./icon/IconArrow.astro";
+import Button from "./ui/Button.astro";
+ 
+const images = [
+  { src: "/dwc/dwc-3.jpg", alt: "hola", title: "Living"},
+  { src: "/dwc/dwc-1.jpg", alt: "hola", title: "Tops"},
+  { src: "/dwc/dwc-2.jpg", alt: "hola", title: "Techo"},
+  { src: "/dwc/dwc-4.jpg", alt: "hola", title: "Bookshelf's"},
+  { src: "/dwc/dwc-5.jpg", alt: "hola", title: "Walking Closets"},
+  { src: "/dwc/dwc-6.jpg", alt: "hola", title: "Top Cocina"},
+  { src: "/dwc/dwc-7.jpg", alt: "hola", title: "Storage Room (con materiales mixtos)"},
+  { src: "/dwc/dwc-8.jpg", alt: "hola", title: "Top"},
+  
+]
+---
+
+<Section
+  id="projects">
+    <Container>
+      <Title
+        title="Nuestros proyectos, tu inspiración"
+        subtitle="Explora las creaciones que hemos realizado para nuestros clientes."
+      />
+        <Portfolio images={images}/>
+
+        <div class="text-center mt-10">
+          <Button 
+            href="#contact" 
+            type="solid"
+            class="group">
+            Contáctanos hoy
+            <IconArrow class="w-0 h-5 ml-1 group-hover:w-5 transition-all ease-linear duration-200"/>
+          </Button>
+        </div>
+        
+      </Container>
+    </Section>

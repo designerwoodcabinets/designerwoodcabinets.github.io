@@ -1,0 +1,26 @@
+---
+import Card from "@ui/Card.astro";
+import Container from "@scaffolding/Container.astro";
+import Section from "@scaffolding/Section.astro";
+
+---
+
+<Section
+    id="">
+    <Container 
+        class="flex flex-col lg:flex-row justify-start gap-8">
+        <Card
+            icon="design" 
+            title="Diseño Único y Exclusivo"
+            description="Diseñamos muebles y espacios personalizados que reflejan tu estilo, transformando cada rincón de tu hogar en algo auténticamente tuyo."/>
+        <Card
+            icon="wood"
+            title="Materiales Premium"
+            description="Seleccionamos las mejores maderas y acabados de alta calidad para garantizar proyectos duraderos, funcionales y llenos de elegancia."/>
+        <Card
+            icon="shield"
+            title="Asesoramiento Experto"
+            description="Con más de 10 años de experiencia, te acompañamos en cada etapa del proceso, desde la idea inicial hasta la instalación final, para dar vida a tus proyectos."/>       
+
+    </Container>
+</Section>

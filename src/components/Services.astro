@@ -1,0 +1,47 @@
+---
+import Container from "@scaffolding/Container.astro";
+import Section from "@scaffolding/Section.astro";
+import Card from "./ui/Card.astro";
+import Service from "./ui/Service.astro";
+import Title from "./ui/Title.astro";
+
+---
+
+<Section 
+    id="services">
+    <Container>
+        <Title
+            title="Soluciones a tu medida"
+            subtitle="Ofrecemos diseño y fabricación de muebles personalizados con acabados de excelencia. "
+        />
+        <ul class="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-6">
+            <Service
+                number="01."
+                bgService="bg-kitchen"
+                service="Sink de Cocina"
+            />
+            <Service
+                number="02."
+                bgService="bg-bathroom"
+                service="Muebles de Baño"
+            />
+            <Service
+                number="03."
+                bgService="bg-kitchen-2"
+                service="Muebles de Cocina"
+            />
+            <Service
+                number="04."
+                bgService="bg-top"
+                service="Top de Granito"
+            />
+            <Service
+                number="05."
+                bgService="bg-marmol" 
+                service="Mármol & Cuarzo"
+            />            
+            
+        </ul>
+
+    </Container>
+</Section>

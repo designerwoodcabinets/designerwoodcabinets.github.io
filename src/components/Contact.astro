@@ -1,0 +1,74 @@
+---
+import Container from "@scaffolding/Container.astro";
+import Section from "@scaffolding/Section.astro";
+import Title from "@ui/Title.astro";
+import IconCirclesLeft from "./icon/IconCirclesLeft.astro";
+import IconCirclesRight from "./icon/IconCirclesRight.astro";
+import IconWhatsapp from "./icon/IconWhatsapp.astro";
+import Button from "./ui/Button.astro";
+import IconEnvelope from "./icon/IconEnvelope.astro";
+import IconPhone from "./icon/IconPhone.astro";
+import IconInstagram from "./icon/IconInstagram.astro";
+ 
+---
+
+<Section 
+    id="contact" 
+    class="relative bg-[var(--brand-gray-950)]">
+    <Container 
+        class="">
+        <IconCirclesLeft class="text-[var(--brand-gray-700)] absolute top-0 left-0 w-36 z-0"/>
+        <IconCirclesRight class="text-[var(--brand-gray-700)] absolute top-0 right-0 w-36 z-0"/>
+        <Title
+            title="¿Listos para empezar tu proyecto?"
+            class="text-white z-10 relative"
+        />
+        <div class="text-center">
+            
+            <p class="text-[var(--brand-gray-200)]">
+                Contáctanos y da el primer paso hacia la remodelación que siempre has querido
+            </p>
+
+            <div class="mt-10 text-center flex flex-col sm:flex-row gap-6 items-center justify-center">
+
+                <Button
+                    href="mailto:consultas@dwc.com" 
+                    type="transparentInverted">
+                    <IconEnvelope 
+                        class="h-6 mr-2"
+                        variant="transparent"/>
+                    consultas@dwc.com
+                </Button>
+
+                <!-- <Button
+                    href="tel:+17867647463" 
+                    type="transparentInverted">
+                    <IconPhone
+                        class="h-6 mr-2"
+                        variant="transparent"/>
+                        (786) 764 7463
+                </Button> -->
+
+                <Button
+                    href="https://wa.me/17867647463" 
+                    type="transparentInverted">
+                    <IconWhatsapp
+                        class="h-6 mr-2"
+                        variant="transparent"/>
+                        (786) 764 7463
+                </Button>
+
+                <Button
+                    href="https://www.instagram.com/designer_wood_cabinets/" 
+                    type="transparentInverted"
+                    target="_blank">
+                    <IconInstagram
+                        class="h-6"
+                        variant="transparent"/>
+                </Button>
+
+                
+            </div>
+        </div>
+    </Container>
+</Section>

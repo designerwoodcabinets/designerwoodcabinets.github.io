@@ -1,0 +1,28 @@
+---
+import Benefits from "@components/Benefits.astro";
+import Company from "@components/Company.astro";
+import Contact from "@components/Contact.astro";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Hero from "@components/Hero.astro";
+import Projects from "@components/Projects.astro";
+import Services from "@components/Services.astro";
+import Steps from "@components/Steps.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+	<Header/>
+	<main class="">
+		<Hero/>
+		<Benefits/>
+		<!-- <Steps/> -->
+		<Company/>
+		<Services/>
+		<Projects/>
+		<Contact/>
+	</main>
+	<Footer/>
+</BaseLayout>
+
+

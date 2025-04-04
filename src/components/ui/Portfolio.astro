@@ -1,0 +1,29 @@
+---
+import type { Props } from "../../types.ts"; 
+
+const props = Astro.props as Props;
+const { images = [], title = "Default title" } = props;
+---
+
+<div class=" columns-1 sm:columns-2 lg:columns-3 gap-4">
+    {images.map((images) => (
+        <div class="mb-4 break-inside-avoid relative">
+            <img 
+                src={images.src} 
+                alt={images.alt || "Image"}
+                class="w-full h-auto object-cover shadow-md" 
+            />
+            <p class="absolute bottom-0 left-0 px-3 py-1 bg-black/50 text-white text-sm">
+                {images.title || "Titulo"} 
+            </p>
+        </div>
+        
+    ))}
+</div>
+
+<style>
+    /* Configuración adicional para el layout */
+    .auto-rows-[1px] {
+      grid-auto-rows: 1px;
+    }
+  </style>

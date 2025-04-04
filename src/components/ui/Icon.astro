@@ -1,0 +1,44 @@
+---
+import IconArrow from "@components/icon/IconArrow.astro";
+import IconCirclesLeft from "@components/icon/IconCirclesLeft.astro";
+import IconCirclesRight from "@components/icon/IconCirclesRight.astro";
+import IconDesign from "@components/icon/IconDesign.astro";
+import IconEnvelope from "@components/icon/IconEnvelope.astro";
+import IconInstagram from "@components/icon/IconInstagram.astro";
+import IconLogotipoHorizontal from "@components/icon/IconLogotipoHorizontal.astro";
+import IconPhone from "@components/icon/IconPhone.astro";
+import IconShield from "@components/icon/IconShield.astro";
+import IconWhatsapp from "@components/icon/IconWhatsapp.astro";
+import IconWood from "@components/icon/IconWood.astro";
+import IconLogo from "@icon/IconLogo.astro";
+import IconLogotipo from "@icon/IconLogotipo.astro";
+
+
+const iconMap = {
+    logo: IconLogo,
+    logotipo: IconLogotipo,
+    logotipoHorizontal: IconLogotipoHorizontal,
+    whatsapp: IconWhatsapp,
+    wood: IconWood,
+    design: IconDesign,
+    shield: IconShield,
+    arrow: IconArrow,
+    circlesLeft: IconCirclesLeft,
+    circlesRight: IconCirclesRight,
+    envelope: IconEnvelope,
+    phone: IconPhone,
+    instagram: IconInstagram
+};
+
+interface IconProps {
+    name: keyof typeof iconMap;
+    className?: string;
+}
+
+const { name, className = "" }: IconProps = Astro.props as IconProps;
+
+const IconComponent = iconMap[name];
+
+---
+
+{IconComponent ? <IconComponent class={className}/> : null}

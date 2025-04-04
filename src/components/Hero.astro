@@ -1,0 +1,80 @@
+---
+import Container from "@scaffolding/Container.astro";
+import Section from "@scaffolding/Section.astro";
+import Line from "@ui/Line.astro";
+
+---
+<Section 
+    id="hero" 
+    class="bg-hero w-full min-h-[100vh] h-full bg-no-repeat bg-center bg-cover overflow-hidden">
+    <Container 
+        class=" relative h-full">
+        <div class=" relative z-10 mx-auto pt-8 sm:pt-16 pb-8 w-full lg:flex justify-around gap-12 ">
+            <h1 class=" text-4xl leading-tight mb-20 text-[var(--brand-gray-50)] font-medium sm:text-5xl lg:text-[5.5rem] text-center lg:text-left">
+                Tu Idea, <br> 
+                <span class=" pl-14 whitespace-nowrap"> nuestro arte...</span>
+            </h1>
+            <div class=" relative -mt-12 lg:mt-10 lg:max-w-sm flex">
+                <Line variant="vertical"/>
+                <div class="pt-12 pb-12">
+                    <p class="text-white uppercase text-sm font-semibold text-center tracking-wider w-full px-6 py-4 bg-black/90 border-b-2 border-white">
+                        Especialistas en remodelación y Trabajos en madera en Miami
+                    </p>
+                    <p class=" bg-black/70 text-lg lg:text-xl text-white px-6 py-10 inline-block ml-auto text-center">
+                        Transformamos tus espacios con soluciones a medida utilizando materiales de alta calidad.
+                    </p>
+                </div>
+                <Line variant="vertical"/>
+            </div>    
+        </div>   
+
+        <div class="z-10 relative mt-8">
+            <Line variant="horizontal" />
+            <p class="p-6 text-lg text-center bg-black/40 text-white lg:text-xl">
+                Somos especialistas en: <span 
+                id="dynamic-word"
+                class="ftn-words min-w-[240px] font-bold text-white inline-block">
+                    Sink de Cocina
+                </span>
+            </p>
+            <Line variant="horizontal" />
+        </div>
+            
+    </Container>
+</Section>
+
+<style>
+
+    @keyframes fadeInOut {
+        0%, 100% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        30%, 60% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .ftn-words{
+        animation: fadeInOut 5s infinite
+    }
+
+</style>
+
+<script>
+  const words = ["Sink de Cocina", "Muebles de Baño", "Fregaderos de Cocina", "Top de Granito", "Mármol & Cuarzo"];
+  let index = 0;
+
+  const changeWord = () => {
+    const dynamicWord = document.getElementById("dynamic-word");
+    if (dynamicWord) {
+        dynamicWord.classList.remove("fade");
+      void dynamicWord.offsetWidth; 
+      index = (index + 1) % words.length;
+      dynamicWord.textContent = words[index];
+      dynamicWord.classList.add("fade");
+    }
+  };
+
+  setInterval(changeWord, 5000); 
+</script>

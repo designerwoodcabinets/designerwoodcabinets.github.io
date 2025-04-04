@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 100 800;
+        font-display: swap;
+        src: url('/src/assets/fonts/Sora-VariableFont_wght.woff2') format('woff2'),
+             url('/src/assets/fonts/Sora-VariableFont_wght.woff') formmat('woff');
+    }
+
+    :root{
+        /* Design Token Primitive (do not use into the project) */
+        --brand-gray-50: #f7f7f8;
+        --brand-gray-100: #eeeef0;
+        --brand-gray-200: #dadadd;
+        --brand-gray-300: #b9bac0;
+        --brand-gray-400: #93949d;
+        --brand-gray-500: #767781;
+        --brand-gray-600: #606169;
+        --brand-gray-700: #4e4e56;
+        --brand-gray-800: #434349;
+        --brand-gray-900: #3b3c3f;
+        --brand-gray-950: #18181a;
+
+        
+
+    }
+
+    /* Design Token Semantic (defined for the project) */
+    :root[data-theme='light']{
+        --color-font: var(--brand-red-500);
+        --color-font-inverted: var(--brand-gray-200);
+        
+        --iconModeSun: red;
+        --iconModeMoon: transparent;
+    }
+    /* :root[data-theme='dark']{
+    } */
+}
