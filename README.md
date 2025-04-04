@@ -49,3 +49,5 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 
 Deploy
+- Se trabajan los cambios en "main" 
+- Cuando los cambios se envíen a "gh-pages" los cambios se publicarán automáticamente 
