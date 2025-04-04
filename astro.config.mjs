@@ -7,7 +7,7 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   // Para GitHub Pages
-  site: 'https://designerwoodcabinets.github.io/',
+  site: 'https://designerwoodcabinets.github.io/', 
   base: '/dwc-web',
   
   
