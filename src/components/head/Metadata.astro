@@ -1,0 +1,29 @@
+---
+
+import {siteName} from "../../config";
+
+interface Props {
+    siteTitle: string;
+    siteDescription: string;
+    siteUrl: string;
+}
+
+const { 
+    siteTitle,
+    siteDescription,
+    siteUrl
+} = Astro.props
+
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="index, follow" />
+
+<title>{siteTitle} | {siteName}</title>
+    
+<meta name="title" content={siteTitle} />
+<meta name="description" content={siteDescription} />
+<meta name="autor" content={siteName} />
+
+<link href={siteUrl} rel="canonical" />

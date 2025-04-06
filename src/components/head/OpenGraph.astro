@@ -1,0 +1,41 @@
+---
+import {siteName} from "../../config";
+
+interface Props {
+    siteTitle: string;
+    siteDescription: string;
+    siteType: string;
+    siteUrl: string;
+}
+
+const {
+    siteTitle,
+    siteDescription,
+    siteType,
+    siteUrl
+} = Astro.props
+
+---
+
+{/* Open Graph */}
+<meta property="og:locale" content="es-ES" />
+<meta property="og:site_name" content={siteName} />
+<meta property="og:type" content={siteType} />
+<meta property="og:title" content={siteTitle} />
+<meta property="og:description" content={siteDescription} />
+<meta property="og:url" content={siteUrl} />
+
+{/*
+    <!-- <meta property="og:image" content="https://virtuswaycdn.azureedge.net/images/landing-page/business-intelligence/business-intelligence-hero-virtusway.webp">
+    <meta property="og:image:url" content="https://virtuswaycdn.azureedge.net/images/landing-page/business-intelligence/business-intelligence-hero-virtusway.webp">
+    <meta property="og:image:secure_url" content="https://virtuswaycdn.azureedge.net/images/landing-page/business-intelligence/business-intelligence-hero-virtusway.webp">
+    <meta property="og:image:type" content="webp">
+    <meta property="og:image:alt" content="Business Intelligence - Virtusway"> -->
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="https://virtuswaycdn.azureedge.net/toolbox/Virtusway_favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://virtuswaycdn.azureedge.net/toolbox/Virtusway_apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://virtuswaycdn.azureedge.net/toolbox/Virtusway_apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://virtuswaycdn.azureedge.net/toolbox/Virtusway_apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://virtuswaycdn.azureedge.net/toolbox/Virtusway_favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://virtuswaycdn.azureedge.net/toolbox/Virtusway_favicon-16x16.png"> -->
+*/}
