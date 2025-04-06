@@ -11,7 +11,8 @@ const { images = [], title = "Default title" } = props;
             <img 
                 src={images.src} 
                 alt={images.alt || "Image"}
-                class="w-full h-auto object-cover shadow-md" 
+                class="w-full h-auto object-cover shadow-md"
+                loading="lazy" 
             />
             <p class="absolute bottom-0 left-0 px-3 py-1 bg-black/50 text-white text-xl">
                 {images.title || "Titulo"} 

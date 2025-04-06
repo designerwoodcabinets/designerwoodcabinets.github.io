@@ -1,17 +1,26 @@
 ---
+import Favicon from "@components/head/Favicon.astro";
+import Metadata from "@components/head/Metadata.astro";
+import OpenGraph from "@components/head/OpenGraph.astro";
+
+const {
+    siteTitle = "Diseño y Fabricación de Gabinetes Personalizados | Designer Wood Cabinets en Miami",
+    siteDescription = "En Designer Wood Cabinets, ofrecemos gabinetes de madera personalizados y soluciones de almacenamiento a medida que combinan artesanía de calidad y diseño exclusivo para transformar su hogar.",
+    siteUrl = "https://www.designerwoodcabinets.com/",
+    siteType = "website"
+} = Astro.props;
+
 ---
 
 <!doctype html>
 <html lang="es" class="scroll-smooth" data-theme="light">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/svg+xml" href="https://www.designerwoodcabinets.com/favicon.svg" />
+        <Metadata {siteTitle} {siteDescription} {siteUrl} />
+        <OpenGraph {siteTitle} {siteDescription} {siteUrl} {siteType} />
+        <Favicon/>
         <style is:global>
             @import "../styles/variables.css";
-        </style>
-        <title>Designer Wood Cabinets</title>
-        
+        </style>       
     </head>
     <body class="font-sora font-light text-ftnFont bg-ftnBg"> 
         <slot />
