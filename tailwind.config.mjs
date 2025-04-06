@@ -27,14 +27,17 @@ export default {
 			},
 			animation: {
 				zoom: 'zoomBg 10s ease-in-out infinite',
-			  },
-			  keyframes: {
+			},
+			keyframes: {
 				zoomBg: {
 				  '0%': { transform: 'scale(1)' },
 				  '50%': { transform: 'scale(1.1)' },
 				  '100%': { transform: 'scale(1)' },
 				},
-			  },
+		  	},
+			screens: {
+				'3xl': '1920px'
+			}
 		},
 	},
 	plugins: [],
