@@ -1,9 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
-    <path d="M50.4 78.5a75.1 75.1 0 0 0-28.5 6.9l24.2-65.7c.7-2 1.9-3.2 3.4-3.2h29c1.5 0 2.7 1.2 3.4 3.2l24.2 65.7s-11.6-7-28.5-7L67 45.5c-.4-1.7-1.6-2.8-2.9-2.8-1.3 0-2.5 1.1-2.9 2.7L50.4 78.5Zm-1.1 28.2Zm-4.2-20.2c-2 6.6-.6 15.8 4.2 20.2a17.5 17.5 0 0 1 .2-.7 5.5 5.5 0 0 1 5.7-4.5c2.8.1 4.3 1.5 4.7 4.7.2 1.1.2 2.3.2 3.5v.4c0 2.7.7 5.2 2.2 7.4a13 13 0 0 0 5.7 4.9v-.3l-.2-.3c-1.8-5.6-.5-9.5 4.4-12.8l1.5-1a73 73 0 0 0 3.2-2.2 16 16 0 0 0 6.8-11.4c.3-2 .1-4-.6-6l-.8.6-1.6 1a37 37 0 0 1-22.4 2.7c-5-.7-9.7-2-13.2-6.2Z" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 220 220">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
     <style>
-        path { fill: #000; }
-        @media (prefers-color-scheme: dark) {
-            path { fill: #FFF; }
-        }
+      .st0 {
+        fill: url(#Degradado_sin_nombre_204);
+      }
+
+      .st1 {
+        fill: url(#Degradado_sin_nombre_201);
+      }
+
+      .st2 {
+        fill: #49494b;
+      }
+
+      .st3 {
+        fill: #848484;
+      }
+
+      .st4 {
+        fill: url(#Degradado_sin_nombre_206);
+      }
+
+      .st5 {
+        fill: url(#Degradado_sin_nombre_209);
+      }
+
+      .st6 {
+        fill: url(#Degradado_sin_nombre_203);
+      }
+
+      .st7 {
+        fill: url(#Degradado_sin_nombre_2011);
+      }
+
+      .st8 {
+        fill: #18181a;
+      }
+
+      .st9 {
+        fill: url(#Degradado_sin_nombre_2010);
+      }
+
+      .st10 {
+        fill: url(#Degradado_sin_nombre_208);
+      }
+
+      .st11 {
+        fill: url(#Degradado_sin_nombre_202);
+      }
+
+      .st12 {
+        fill: url(#Degradado_sin_nombre_205);
+      }
+
+      .st13 {
+        fill: url(#Degradado_sin_nombre_20);
+      }
+
+      .st14 {
+        fill: url(#Degradado_sin_nombre_207);
+      }
     </style>
+    <linearGradient id="Degradado_sin_nombre_20" data-name="Degradado sin nombre 20" x1="-41.6" y1="188" x2="288.6" y2="188" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#49494b" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#49494b"/>
+      <stop offset="1" stop-color="#49494b" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_201" data-name="Degradado sin nombre 20" x1="-41.6" y1="152.9" x2="288.6" y2="152.9" xlink:href="#Degradado_sin_nombre_20"/>
+    <linearGradient id="Degradado_sin_nombre_202" data-name="Degradado sin nombre 20" y1="181.6" y2="181.6" xlink:href="#Degradado_sin_nombre_20"/>
+    <linearGradient id="Degradado_sin_nombre_203" data-name="Degradado sin nombre 20" y1="34.5" y2="34.5" xlink:href="#Degradado_sin_nombre_20"/>
+    <linearGradient id="Degradado_sin_nombre_204" data-name="Degradado sin nombre 20" x1="49.9" y1="346.8" x2="49.9" y2="-74.1" xlink:href="#Degradado_sin_nombre_20"/>
+    <linearGradient id="Degradado_sin_nombre_205" data-name="Degradado sin nombre 20" x1="78.2" y1="346.8" x2="78.2" y2="-74.1" xlink:href="#Degradado_sin_nombre_20"/>
+    <linearGradient id="Degradado_sin_nombre_206" data-name="Degradado sin nombre 20" x1="-7.3" y1="277.6" x2="290.7" y2="-20.5" xlink:href="#Degradado_sin_nombre_20"/>
+    <linearGradient id="Degradado_sin_nombre_207" data-name="Degradado sin nombre 20" x1="-71.7" y1="277.6" x2="226.5" y2="-20.6" xlink:href="#Degradado_sin_nombre_20"/>
+    <linearGradient id="Degradado_sin_nombre_208" data-name="Degradado sin nombre 20" x1="-3.8" y1="277.5" x2="294.4" y2="-20.6" xlink:href="#Degradado_sin_nombre_20"/>
+    <linearGradient id="Degradado_sin_nombre_209" data-name="Degradado sin nombre 20" x1="-41.6" y1="109.1" x2="288.6" y2="109.1" xlink:href="#Degradado_sin_nombre_20"/>
+    <linearGradient id="Degradado_sin_nombre_2010" data-name="Degradado sin nombre 20" x1="-41.9" y1="107" x2="288.5" y2="107" xlink:href="#Degradado_sin_nombre_20"/>
+    <linearGradient id="Degradado_sin_nombre_2011" data-name="Degradado sin nombre 20" y1="62.9" x2="288.6" y2="62.9" xlink:href="#Degradado_sin_nombre_20"/>
+  </defs>
+  <rect class="st8" x="-6.1" y="-7" width="232.1" height="232.1"/>
+  <path class="st2" d="M382.7,104.3v.2c-.1,0-.1,0-.2,0v-.2c.1,0,.2,0,.2.1Z"/>
+  <path class="st2" d="M382.7,104.3v.2c-.1,0-.1,0-.2,0v-.2c.1,0,.2,0,.2.1Z"/>
+  <polygon class="st2" points="242.5 196 242.6 196 242.6 195.9 242.5 196"/>
+  <path class="st2" d="M382.7,104.3v.2c-.1,0-.1,0-.2,0v-.2c.1,0,.2,0,.2.1Z"/>
+  <polygon class="st2" points="242.8 195.3 242.8 195.3 242.8 195.3 242.8 195.3"/>
+  <g>
+    <path class="st3" d="M50.6,35.1h50.5c23.2,0,43.9,10.8,57.3,27.7h0c.2.2.3.4.5.7,6.3,8.1,10.9,17.6,13.4,28,0,.3.2.7.2,1,0,0,0,0,0,0,0,.4.2.7.2,1.1.1.7.3,1.5.4,2.3,0,.4.1.8.2,1.2,0,.4.1.8.2,1.2,0,.4.1.8.2,1.3,0,.4,0,.9.1,1.3,0,.6.1,1.2.2,1.9,0,.6,0,1.2.1,1.8,0,0,0,.2,0,.2,0,.4,0,.9,0,1.3,0,.3,0,.5,0,.8,0,0-24.5,0-24.5,0-.8-24.1-20.5-43.4-44.8-43.4h-26.1v8.4s0,.8,0,.8v34.2h-28.2"/>
+    <path class="st3" d="M67,181.5l11.7-28.2v-.3c.1,0,.1.2.1.2h26.1c24.3,0,44-19.3,44.8-43.4,0,0,24.5,0,24.5,0,0,.3,0,.5,0,.8,0,.4,0,.9,0,1.3,0,0,0,.2,0,.2,0,.6,0,1.2-.1,1.8,0,.6,0,1.2-.2,1.9,0,.4,0,.9-.1,1.3,0,.4-.1.8-.2,1.3,0,.4-.1.8-.2,1.2,0,.4-.1.8-.2,1.2-.1.8-.3,1.5-.4,2.3,0,.4-.2.7-.2,1.1,0,0,0,0,0,0,0,.3-.1.7-.2,1-2.4,10.3-7,19.9-13.4,28-.2.2-.3.4-.5.7h0c-13.4,16.9-34.1,27.7-57.3,27.7h-34Z"/>
+  </g>
+  <g>
+    <path class="st13" d="M276.7,187.4c-94.1-.3-194.7-.4-306.6-.2v1.6c111.9-.2,212.5-.2,306.6.2v-1.6Z"/>
+    <path class="st2" d="M100,182.2c-40.8,0-74-33.2-74-74S59.2,34.2,100,34.2s74,33.2,74,74-33.2,74-74,74ZM100,35.8c-39.9,0-72.4,32.5-72.4,72.4s32.5,72.4,72.4,72.4,72.4-32.5,72.4-72.4-32.5-72.4-72.4-72.4Z"/>
+    <path class="st2" d="M104.3,153.8c-25.1,0-45.5-20.4-45.5-45.5s20.4-45.5,45.5-45.5,45.5,20.4,45.5,45.5-20.4,45.5-45.5,45.5ZM104.3,64.3c-24.2,0-44,19.7-44,44s19.7,44,44,44,44-19.7,44-44-19.7-44-44-44Z"/>
+    <path class="st1" d="M276.7,152.1c-94.1.1-194.6.1-306.6,0v1.6c44.9,0,87.9,0,129.5,0,62.1,0,120.8,0,177.1-.1v-1.6Z"/>
+    <path class="st11" d="M276.7,180.9c-94.1-.2-194.6-.3-306.6-.1v1.6c112-.2,212.5-.1,306.6.1v-1.6Z"/>
+    <path class="st6" d="M276.7,33.8c-94.1-.3-194.7-.3-306.6-.1v1.6c112-.2,212.5-.1,306.6.1v-1.6Z"/>
+    <path class="st0" d="M49.1,284.2h1.6c.3-118.9.2-235.7-.2-348.2h-1.6c.4,112.5.5,229.3.2,348.2Z"/>
+    <path class="st12" d="M77.5,284.2h1.6c.4-118.9.3-235.7-.3-348.2h-1.6c.6,112.5.7,229.3.3,348.2Z"/>
+    <path class="st4" d="M88.9,284.2c3-7.2,5.9-14.5,8.9-21.7C141.5,155.4,186.8,44.8,233-64h-1.7c-46.1,108.6-91.2,219-134.9,325.9-3,7.5-6.1,14.9-9.1,22.3h1.7Z"/>
+    <path class="st14" d="M24.2,284.2c13.7-32.9,27.7-66.4,42.6-102l4.7-11.2c21-50.1,42.7-101.9,63.8-153,12.2-29.5,23.2-56.4,33.6-82h-1.7c-10.3,25.4-21.3,52.2-33.4,81.4-21.1,51-42.8,102.9-63.8,153l-4.7,11.2c-15,35.8-29.1,69.5-42.9,102.6h1.7Z"/>
+    <path class="st10" d="M92,284.2c16.9-40.8,34.1-81.4,50.9-121.1,31.4-74.4,63.8-151.1,94.1-227.1h-1.7c-30.2,75.7-62.5,152.3-93.8,226.5-16.9,39.9-34.1,80.8-51.1,121.7h1.7Z"/>
+    <path class="st5" d="M276.7,108.5c-94.1-.6-194.7-.7-306.6-.3v1.6c111.9-.4,212.5-.3,306.6.3v-1.6Z"/>
+    <path class="st9" d="M276.7,106.2c-94.2,0-194.8,0-306.6,0v1.6c45.1,0,88.4,0,130.2,0,61.8,0,120.2,0,176.4,0v-1.6Z"/>
+    <path class="st7" d="M276.7,62.2c-94.1-.1-194.6-.2-306.6,0v1.6c112,0,212.5,0,306.6,0v-1.6Z"/>
+  </g>
 </svg>
