@@ -19,11 +19,11 @@ const {
     size = 'normal'
 }: ButtonProps = Astro.props;
 
-const commonClasses = 'inline-flex items-center justify-center border-2 border-solid border-transparent text-sm font-medium transition-all ease-linear duration-200 active:scale-90 ';
+const commonClasses = 'inline-flex items-center justify-center border-2 border-solid border-transparent text-lg 2xl:text-xl font-medium transition-all ease-linear duration-200 active:scale-90 ';
 
 const sizeClasses = size === 'small'
     ? 'px-5 py-3'
-    : 'px-5 py-3'
+    : 'px-5 py-3 2xl:px-8 2xl:py-5'
 
 const buttonClasses = `${commonClasses} ${sizeClasses} 
     ${type === 'solid'
